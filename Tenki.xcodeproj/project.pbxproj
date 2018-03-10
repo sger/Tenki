@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C491EC69529E21B9427E2D6 /* Pods_TenkiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8480010CEC29AF94CD07D /* Pods_TenkiTests.framework */; };
+		1D55925E7DD133050D20EFE4 /* Pods_TenkiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17461E69AAEB636DF460B0C1 /* Pods_TenkiUITests.framework */; };
 		56B9013F2053D06200F17718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B9013E2053D06200F17718 /* AppDelegate.swift */; };
-		56B901412053D06200F17718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B901402053D06200F17718 /* ViewController.swift */; };
+		56B901412053D06200F17718 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B901402053D06200F17718 /* WeatherViewController.swift */; };
 		56B901432053D06200F17718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B901422053D06200F17718 /* Assets.xcassets */; };
 		56B901462053D06200F17718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B901442053D06200F17718 /* Main.storyboard */; };
 		56B901522053D06200F17718 /* TenkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B901512053D06200F17718 /* TenkiTests.swift */; };
 		56B9015D2053D06200F17718 /* TenkiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B9015C2053D06200F17718 /* TenkiUITests.swift */; };
+		5CF1ED63D790E1849A6D6908 /* Pods_Tenki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BBE4665BA0F6D66C834470 /* Pods_Tenki.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01A65D3720D75C4100BD607D /* Pods-TenkiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenkiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenkiUITests/Pods-TenkiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		17461E69AAEB636DF460B0C1 /* Pods_TenkiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenkiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		233020F8D0653ADDD216543F /* Pods-TenkiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenkiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TenkiUITests/Pods-TenkiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5130C130C8AD89E1F8E9E719 /* Pods-Tenki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tenki.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tenki/Pods-Tenki.release.xcconfig"; sourceTree = "<group>"; };
 		56B9013B2053D06200F17718 /* Tenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B9013E2053D06200F17718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56B901402053D06200F17718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56B901402053D06200F17718 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		56B901422053D06200F17718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56B901452053D06200F17718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56B901472053D06200F17718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +53,11 @@
 		56B901582053D06200F17718 /* TenkiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenkiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B9015C2053D06200F17718 /* TenkiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenkiUITests.swift; sourceTree = "<group>"; };
 		56B9015E2053D06200F17718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BD110844D589A9F228918F /* Pods-TenkiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenkiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenkiTests/Pods-TenkiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F39D89531973D0B2C206307 /* Pods-Tenki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tenki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tenki/Pods-Tenki.debug.xcconfig"; sourceTree = "<group>"; };
+		91BBE4665BA0F6D66C834470 /* Pods_Tenki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tenki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FE119E3384DEB1D9A89719 /* Pods-TenkiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenkiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TenkiTests/Pods-TenkiTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2F8480010CEC29AF94CD07D /* Pods_TenkiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenkiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF1ED63D790E1849A6D6908 /* Pods_Tenki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C491EC69529E21B9427E2D6 /* Pods_TenkiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D55925E7DD133050D20EFE4 /* Pods_TenkiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +95,8 @@
 				56B901502053D06200F17718 /* TenkiTests */,
 				56B9015B2053D06200F17718 /* TenkiUITests */,
 				56B9013C2053D06200F17718 /* Products */,
+				FB474BCC8E14C9AB1ED9F70B /* Pods */,
+				B75921FA70A05FC29173F5E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				56B9013E2053D06200F17718 /* AppDelegate.swift */,
-				56B901402053D06200F17718 /* ViewController.swift */,
+				56B901402053D06200F17718 /* WeatherViewController.swift */,
 				56B901422053D06200F17718 /* Assets.xcassets */,
 				56B901442053D06200F17718 /* Main.storyboard */,
 				56B901472053D06200F17718 /* Info.plist */,
@@ -124,6 +141,29 @@
 			path = TenkiUITests;
 			sourceTree = "<group>";
 		};
+		B75921FA70A05FC29173F5E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91BBE4665BA0F6D66C834470 /* Pods_Tenki.framework */,
+				B2F8480010CEC29AF94CD07D /* Pods_TenkiTests.framework */,
+				17461E69AAEB636DF460B0C1 /* Pods_TenkiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB474BCC8E14C9AB1ED9F70B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F39D89531973D0B2C206307 /* Pods-Tenki.debug.xcconfig */,
+				5130C130C8AD89E1F8E9E719 /* Pods-Tenki.release.xcconfig */,
+				65BD110844D589A9F228918F /* Pods-TenkiTests.debug.xcconfig */,
+				93FE119E3384DEB1D9A89719 /* Pods-TenkiTests.release.xcconfig */,
+				01A65D3720D75C4100BD607D /* Pods-TenkiUITests.debug.xcconfig */,
+				233020F8D0653ADDD216543F /* Pods-TenkiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56B901612053D06200F17718 /* Build configuration list for PBXNativeTarget "Tenki" */;
 			buildPhases = (
+				C97309378372B4DF4AD70715 /* [CP] Check Pods Manifest.lock */,
 				56B901372053D06200F17718 /* Sources */,
 				56B901382053D06200F17718 /* Frameworks */,
 				56B901392053D06200F17718 /* Resources */,
+				BE721CF8C6B26889C875B6B4 /* [CP] Embed Pods Frameworks */,
+				5FF4805A6F7AA096689A0EAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56B901642053D06200F17718 /* Build configuration list for PBXNativeTarget "TenkiTests" */;
 			buildPhases = (
+				AB7A4BABB756D9BBC585D463 /* [CP] Check Pods Manifest.lock */,
 				56B901492053D06200F17718 /* Sources */,
 				56B9014A2053D06200F17718 /* Frameworks */,
 				56B9014B2053D06200F17718 /* Resources */,
+				479E142EDCD7E07F52B95CB2 /* [CP] Embed Pods Frameworks */,
+				1486EF3E588A99565AC5886D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56B901672053D06200F17718 /* Build configuration list for PBXNativeTarget "TenkiUITests" */;
 			buildPhases = (
+				CE56A775DAC56ABECF447F37 /* [CP] Check Pods Manifest.lock */,
 				56B901542053D06200F17718 /* Sources */,
 				56B901552053D06200F17718 /* Frameworks */,
 				56B901562053D06200F17718 /* Resources */,
+				D36F509F2ECAC6F3E18FA873 /* [CP] Embed Pods Frameworks */,
+				FA7FDF3567CA1296BC1803C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,12 +301,168 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1486EF3E588A99565AC5886D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenkiTests/Pods-TenkiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		479E142EDCD7E07F52B95CB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenkiTests/Pods-TenkiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FF4805A6F7AA096689A0EAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tenki/Pods-Tenki-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB7A4BABB756D9BBC585D463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TenkiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE721CF8C6B26889C875B6B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tenki/Pods-Tenki-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tenki/Pods-Tenki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C97309378372B4DF4AD70715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tenki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE56A775DAC56ABECF447F37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TenkiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36F509F2ECAC6F3E18FA873 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenkiUITests/Pods-TenkiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7FDF3567CA1296BC1803C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenkiUITests/Pods-TenkiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56B901372053D06200F17718 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56B901412053D06200F17718 /* ViewController.swift in Sources */,
+				56B901412053D06200F17718 /* WeatherViewController.swift in Sources */,
 				56B9013F2053D06200F17718 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +618,7 @@
 		};
 		56B901622053D06200F17718 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F39D89531973D0B2C206307 /* Pods-Tenki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Tenki/Tenki.entitlements;
@@ -429,6 +635,7 @@
 		};
 		56B901632053D06200F17718 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5130C130C8AD89E1F8E9E719 /* Pods-Tenki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Tenki/Tenki.entitlements;
@@ -445,6 +652,7 @@
 		};
 		56B901652053D06200F17718 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65BD110844D589A9F228918F /* Pods-TenkiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +670,7 @@
 		};
 		56B901662053D06200F17718 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FE119E3384DEB1D9A89719 /* Pods-TenkiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +688,7 @@
 		};
 		56B901682053D06200F17718 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A65D3720D75C4100BD607D /* Pods-TenkiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -495,6 +705,7 @@
 		};
 		56B901692053D06200F17718 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233020F8D0653ADDD216543F /* Pods-TenkiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
