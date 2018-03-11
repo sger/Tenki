@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C491EC69529E21B9427E2D6 /* Pods_TenkiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8480010CEC29AF94CD07D /* Pods_TenkiTests.framework */; };
 		1D55925E7DD133050D20EFE4 /* Pods_TenkiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17461E69AAEB636DF460B0C1 /* Pods_TenkiUITests.framework */; };
+		5608631B2055809200E526A0 /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 5608631A2055809200E526A0 /* Extensions */; };
 		56B9013F2053D06200F17718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B9013E2053D06200F17718 /* AppDelegate.swift */; };
 		56B901412053D06200F17718 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B901402053D06200F17718 /* WeatherViewController.swift */; };
 		56B901432053D06200F17718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B901422053D06200F17718 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		17461E69AAEB636DF460B0C1 /* Pods_TenkiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenkiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		233020F8D0653ADDD216543F /* Pods-TenkiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenkiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TenkiUITests/Pods-TenkiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5130C130C8AD89E1F8E9E719 /* Pods-Tenki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tenki.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tenki/Pods-Tenki.release.xcconfig"; sourceTree = "<group>"; };
+		5608631A2055809200E526A0 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
 		56B9013B2053D06200F17718 /* Tenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B9013E2053D06200F17718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56B901402053D06200F17718 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		56B9013D2053D06200F17718 /* Tenki */ = {
 			isa = PBXGroup;
 			children = (
+				5608631A2055809200E526A0 /* Extensions */,
 				56B9013E2053D06200F17718 /* AppDelegate.swift */,
 				56B901402053D06200F17718 /* WeatherViewController.swift */,
 				56B901422053D06200F17718 /* Assets.xcassets */,
@@ -280,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5608631B2055809200E526A0 /* Extensions in Resources */,
 				56B901432053D06200F17718 /* Assets.xcassets in Resources */,
 				56B901462053D06200F17718 /* Main.storyboard in Resources */,
 			);
