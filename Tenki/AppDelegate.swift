@@ -42,7 +42,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, CLLocationManagerDelegate {
     
     // MARK: - CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print(locations)
+        let currentLocation = locations[locations.count - 1]
+        DarkSkyAPI.instance.start(currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude)
     }
 }
 

@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		1C491EC69529E21B9427E2D6 /* Pods_TenkiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8480010CEC29AF94CD07D /* Pods_TenkiTests.framework */; };
 		1D55925E7DD133050D20EFE4 /* Pods_TenkiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17461E69AAEB636DF460B0C1 /* Pods_TenkiUITests.framework */; };
-		5608631B2055809200E526A0 /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 5608631A2055809200E526A0 /* Extensions */; };
+		5689689A2058304400F20A27 /* DarkSkyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568968992058304400F20A27 /* DarkSkyAPI.swift */; };
+		5689689C2058309B00F20A27 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5689689B2058309B00F20A27 /* Router.swift */; };
+		5689689F2058346A00F20A27 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5689689E2058346A00F20A27 /* Forecast.swift */; };
+		568968A820584E3600F20A27 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568968A720584E3600F20A27 /* Secrets.swift */; };
 		56B9013F2053D06200F17718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B9013E2053D06200F17718 /* AppDelegate.swift */; };
 		56B901412053D06200F17718 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B901402053D06200F17718 /* WeatherViewController.swift */; };
 		56B901432053D06200F17718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B901422053D06200F17718 /* Assets.xcassets */; };
@@ -41,7 +44,10 @@
 		17461E69AAEB636DF460B0C1 /* Pods_TenkiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenkiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		233020F8D0653ADDD216543F /* Pods-TenkiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenkiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TenkiUITests/Pods-TenkiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5130C130C8AD89E1F8E9E719 /* Pods-Tenki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tenki.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tenki/Pods-Tenki.release.xcconfig"; sourceTree = "<group>"; };
-		5608631A2055809200E526A0 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
+		568968992058304400F20A27 /* DarkSkyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyAPI.swift; sourceTree = "<group>"; };
+		5689689B2058309B00F20A27 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		5689689E2058346A00F20A27 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		568968A720584E3600F20A27 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Secrets.swift; path = Tenki/Configs/Secrets.swift; sourceTree = SOURCE_ROOT; };
 		56B9013B2053D06200F17718 /* Tenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B9013E2053D06200F17718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56B901402053D06200F17718 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		568968982058302800F20A27 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				568968992058304400F20A27 /* DarkSkyAPI.swift */,
+				5689689B2058309B00F20A27 /* Router.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5689689D2058345100F20A27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5689689E2058346A00F20A27 /* Forecast.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		568968A620584E2700F20A27 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				568968A720584E3600F20A27 /* Secrets.swift */,
+			);
+			name = Configs;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		56B901322053D06200F17718 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +147,9 @@
 		56B9013D2053D06200F17718 /* Tenki */ = {
 			isa = PBXGroup;
 			children = (
-				5608631A2055809200E526A0 /* Extensions */,
+				568968A620584E2700F20A27 /* Configs */,
+				5689689D2058345100F20A27 /* Models */,
+				568968982058302800F20A27 /* Network */,
 				56B9013E2053D06200F17718 /* AppDelegate.swift */,
 				56B901402053D06200F17718 /* WeatherViewController.swift */,
 				56B901422053D06200F17718 /* Assets.xcassets */,
@@ -283,7 +317,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5608631B2055809200E526A0 /* Extensions in Resources */,
 				56B901432053D06200F17718 /* Assets.xcassets in Resources */,
 				56B901462053D06200F17718 /* Main.storyboard in Resources */,
 			);
@@ -466,8 +499,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5689689C2058309B00F20A27 /* Router.swift in Sources */,
+				568968A820584E3600F20A27 /* Secrets.swift in Sources */,
+				5689689A2058304400F20A27 /* DarkSkyAPI.swift in Sources */,
 				56B901412053D06200F17718 /* WeatherViewController.swift in Sources */,
 				56B9013F2053D06200F17718 /* AppDelegate.swift in Sources */,
+				5689689F2058346A00F20A27 /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
