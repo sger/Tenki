@@ -17,6 +17,8 @@ public class Forecast: NSObject {
     let temperature: String
     let celsius: String
     
+    let dateString: String
+    
     public required init(json: JSON) {
         self.latitude = json["longitude"].floatValue
         self.longitude = json["longitude"].floatValue
@@ -28,6 +30,12 @@ public class Forecast: NSObject {
         self.celsius = String(Int(round(Float(temperature - 32) * 5.0 / 9.0)))
         //print(Int(round(Float(test - 32) * 5.0 / 9.0))) // celsius
         //print(Int(round(Float(test) * 9.0 / 5.0)) + 32) // Fahr
+    
+        let unixDate = currently["time"].doubleValue
+        let date = Date(timeIntervalSince1970: unixDate)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM dd YYYY hh:mm a"
+        self.dateString = dateFormatter.string(from: date)
         super.init()
     }
 }

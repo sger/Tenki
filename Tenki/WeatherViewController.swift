@@ -11,6 +11,8 @@ import RxCocoa
 
 class WeatherViewController: NSViewController {
 
+    @IBOutlet weak var dateTextField: NSTextField!
+    
     let disposeBag: DisposeBag = DisposeBag()
     var viewModel: WeatherViewModel?
     
@@ -30,6 +32,7 @@ class WeatherViewController: NSViewController {
             .subscribe(onNext: { [weak self] (forecast) in
                 print("!!!!!!!!!!!!!!")
                 print(forecast.icon)
+                self?.dateTextField.stringValue = forecast.dateString
             }).disposed(by: self.disposeBag)
     }
 }
