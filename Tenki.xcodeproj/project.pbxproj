@@ -13,6 +13,7 @@
 		5689689C2058309B00F20A27 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5689689B2058309B00F20A27 /* Router.swift */; };
 		5689689F2058346A00F20A27 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5689689E2058346A00F20A27 /* Forecast.swift */; };
 		568968A820584E3600F20A27 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568968A720584E3600F20A27 /* Secrets.swift */; };
+		568968AE2058641100F20A27 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568968AD2058641100F20A27 /* WeatherViewModel.swift */; };
 		56B9013F2053D06200F17718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B9013E2053D06200F17718 /* AppDelegate.swift */; };
 		56B901412053D06200F17718 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B901402053D06200F17718 /* WeatherViewController.swift */; };
 		56B901432053D06200F17718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B901422053D06200F17718 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		5689689B2058309B00F20A27 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5689689E2058346A00F20A27 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		568968A720584E3600F20A27 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Secrets.swift; path = Tenki/Configs/Secrets.swift; sourceTree = SOURCE_ROOT; };
+		568968AD2058641100F20A27 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		56B9013B2053D06200F17718 /* Tenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B9013E2053D06200F17718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56B901402053D06200F17718 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		56B9013D2053D06200F17718 /* Tenki */ = {
 			isa = PBXGroup;
 			children = (
+				568968AD2058641100F20A27 /* WeatherViewModel.swift */,
 				568968A620584E2700F20A27 /* Configs */,
 				5689689D2058345100F20A27 /* Models */,
 				568968982058302800F20A27 /* Network */,
@@ -502,6 +505,7 @@
 				5689689C2058309B00F20A27 /* Router.swift in Sources */,
 				568968A820584E3600F20A27 /* Secrets.swift in Sources */,
 				5689689A2058304400F20A27 /* DarkSkyAPI.swift in Sources */,
+				568968AE2058641100F20A27 /* WeatherViewModel.swift in Sources */,
 				56B901412053D06200F17718 /* WeatherViewController.swift in Sources */,
 				56B9013F2053D06200F17718 /* AppDelegate.swift in Sources */,
 				5689689F2058346A00F20A27 /* Forecast.swift in Sources */,

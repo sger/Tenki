@@ -8,12 +8,16 @@
 
 import Cocoa
 import CoreLocation
+import RxSwift
+import RxCocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, CLLocationManagerDelegate {
 
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     let locationManager = CLLocationManager()
+    var currentLocation: CLLocation!
+    let disposeBag: DisposeBag = DisposeBag()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem.button?.title = "--°"
@@ -34,6 +38,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, CLLocationManagerDelegate {
             NSStoryboard.SceneIdentifier(rawValue: "WeatherViewController")) as? WeatherViewController else {
             return
         }
+        // test
+        let weatherViewModel = WeatherViewModel(withLatitude: currentLocation.coordinate.latitude,
+                                                longitude: currentLocation.coordinate.longitude)
+        vc.viewModel = weatherViewModel
+        vc.rx.sentMessage(#selector(WeatherViewController.viewDidLoad))
+            .subscribe(onNext: { _ in
+            }).disposed(by: self.disposeBag)
+        
         let popOver = NSPopover()
         popOver.contentViewController = vc
         popOver.behavior = .transient
@@ -42,8 +54,15 @@ class AppDelegate: NSObject, NSApplicationDelegate, CLLocationManagerDelegate {
     
     // MARK: - CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let currentLocation = locations[locations.count - 1]
-        DarkSkyAPI.instance.start(currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude)
+        currentLocation = locations[locations.count - 1]
+        Observable<Int>
+            .timer(0, period:60, scheduler: MainScheduler.instance)
+            .flatMap { (_) -> Observable<Forecast> in
+                return DarkSkyAPI.instance.forecast(self.currentLocation.coordinate.latitude,
+                                                    longitude: self.currentLocation.coordinate.longitude)
+            }.subscribe(onNext: { forecast in
+                self.statusItem.button?.title = "\(forecast.celsius)°"
+            }).disposed(by: self.disposeBag)
     }
 }
 
