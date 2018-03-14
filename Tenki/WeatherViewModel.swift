@@ -10,17 +10,17 @@ import RxSwift
 import RxCocoa
 
 final class WeatherViewModel: NSObject {
-    
+
     let forecast: Observable<Forecast>
-    
+
     init(withLatitude latitude: Double, longitude: Double) {
-        
+
         self.forecast = Observable
             .just(())
             .flatMapLatest { _ in
                 return DarkSkyAPI.instance.forecast(latitude, longitude: longitude)
             }
-        
+
         super.init()
     }
 }

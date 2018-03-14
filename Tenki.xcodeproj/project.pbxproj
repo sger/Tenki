@@ -120,8 +120,7 @@
 			children = (
 				568968A720584E3600F20A27 /* Secrets.swift */,
 			);
-			name = Configs;
-			path = "New Group";
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		56B901322053D06200F17718 = {
@@ -217,6 +216,7 @@
 				56B901392053D06200F17718 /* Resources */,
 				BE721CF8C6B26889C875B6B4 /* [CP] Embed Pods Frameworks */,
 				5FF4805A6F7AA096689A0EAE /* [CP] Copy Pods Resources */,
+				568F5F382058E65900686649 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -282,6 +282,11 @@
 					56B9013A2053D06200F17718 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					56B9014C2053D06200F17718 = {
 						CreatedOnToolsVersion = 9.2;
@@ -371,6 +376,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenkiTests/Pods-TenkiTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		568F5F382058E65900686649 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		5FF4805A6F7AA096689A0EAE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -666,7 +684,6 @@
 			baseConfigurationReference = 6F39D89531973D0B2C206307 /* Pods-Tenki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Tenki/Tenki.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = A22EW7MN8G;
@@ -683,7 +700,6 @@
 			baseConfigurationReference = 5130C130C8AD89E1F8E9E719 /* Pods-Tenki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Tenki/Tenki.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = A22EW7MN8G;

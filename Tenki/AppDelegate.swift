@@ -31,7 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CLLocationManagerDelegate {
 
     func applicationWillTerminate(_ aNotification: Notification) {
     }
-    
+
     @objc func displayPopUp(_ sender: AnyObject) {
         let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
         guard let vc = storyboard.instantiateController(withIdentifier:
@@ -45,24 +45,26 @@ class AppDelegate: NSObject, NSApplicationDelegate, CLLocationManagerDelegate {
         vc.rx.sentMessage(#selector(WeatherViewController.viewDidLoad))
             .subscribe(onNext: { _ in
             }).disposed(by: self.disposeBag)
-        
+
         let popOver = NSPopover()
         popOver.contentViewController = vc
         popOver.behavior = .transient
         popOver.show(relativeTo: (statusItem.button?.bounds)!, of: statusItem.button!, preferredEdge: .maxY)
     }
-    
+
     // MARK: - CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations[locations.count - 1]
+        print(currentLocation)
         Observable<Int>
-            .timer(0, period:60, scheduler: MainScheduler.instance)
+            .timer(0, period: 60, scheduler: MainScheduler.instance)
             .flatMap { (_) -> Observable<Forecast> in
                 return DarkSkyAPI.instance.forecast(self.currentLocation.coordinate.latitude,
                                                     longitude: self.currentLocation.coordinate.longitude)
             }.subscribe(onNext: { forecast in
                 self.statusItem.button?.title = "\(forecast.celsius)°"
+                self.locationManager.stopUpdatingLocation()
+                print("stop")
             }).disposed(by: self.disposeBag)
     }
 }
-

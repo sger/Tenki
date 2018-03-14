@@ -10,25 +10,25 @@ import Alamofire
 import RxSwift
 import SwiftyJSON
 
-typealias Completed = (AnyObject) -> ()
+typealias Completed = (AnyObject) -> Void
 
 public final class DarkSkyAPI {
     static let instance: DarkSkyAPI = DarkSkyAPI()
-    
+
     fileprivate let disposeBag: DisposeBag = DisposeBag()
-    
+
     fileprivate init() {}
-    
+
     internal func start(_ latitude: Double, longitude: Double) {
         Observable<Int>
-            .timer(0, period:60, scheduler: MainScheduler.instance)
+            .timer(0, period: 60, scheduler: MainScheduler.instance)
             .flatMap { (_) -> Observable<Forecast> in
                 return self.forecast(latitude, longitude: longitude)
             }.subscribe(onNext: { forecast in
                 print(forecast.celsius)
             }).disposed(by: self.disposeBag)
     }
-    
+
     public func forecast(_ latitude: Double, longitude: Double) -> Observable<Forecast> {
         return Observable.create { (observer) -> Disposable in
             let request = Alamofire

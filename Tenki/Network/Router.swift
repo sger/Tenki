@@ -12,15 +12,15 @@ public typealias ParametersList = [String: String]
 
 public enum Router: URLRequestConvertible {
     static let BaseURL: URL = URL(string: "https://api.darksky.net")!
-    
+
     case forecast(lat: Double, lon: Double)
-    
+
     var path: String {
         switch self {
         case .forecast(let lat, let lon): return "/forecast/\(Secrets.darkSkyAPIKey)/\(lat),\(lon)"
         }
     }
-    
+
     var httpMethod: Alamofire.HTTPMethod {
         switch self {
         case .forecast(_, _): return .get
@@ -31,7 +31,7 @@ public enum Router: URLRequestConvertible {
         let url: URL = Router.BaseURL.appendingPathComponent(self.path)
         var request: URLRequest = URLRequest(url: url)
         request.httpMethod = self.httpMethod.rawValue
-        
+
         let tmpRequest: URLRequest = try {
             switch self {
             case .forecast(_, _):
