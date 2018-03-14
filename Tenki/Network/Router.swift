@@ -9,8 +9,9 @@
 import Alamofire
 
 public typealias ParametersList = [String: String]
-
+// swiftlint:disable empty_enum_arguments
 public enum Router: URLRequestConvertible {
+    // swiftlint:disable force_unwrapping
     static let BaseURL: URL = URL(string: "https://api.darksky.net")!
 
     case forecast(lat: Double, lon: Double)
@@ -38,7 +39,7 @@ public enum Router: URLRequestConvertible {
                 return try URLEncoding.queryString.encode(request, with: nil)
             }
         }()
-        print("tmpRequest \(tmpRequest.url?.absoluteString ?? " - ")")
+        log.info("URLRequest \(tmpRequest.url?.absoluteString ?? " - ")")
         return tmpRequest
     }
 }

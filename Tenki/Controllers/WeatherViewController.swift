@@ -11,14 +11,13 @@ import RxCocoa
 
 class WeatherViewController: NSViewController {
 
-    @IBOutlet weak var dateTextField: NSTextField!
+    @IBOutlet weak private var dateTextField: NSTextField!
 
     let disposeBag: DisposeBag = DisposeBag()
     var viewModel: WeatherViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("WeatherViewController")
         if let viewModel = self.viewModel { self.setupBindings(forViewModel: viewModel) }
     }
 
@@ -30,7 +29,6 @@ class WeatherViewController: NSViewController {
     fileprivate func setupBindings(forViewModel viewModel: WeatherViewModel) {
         viewModel.forecast
             .subscribe(onNext: { [weak self] (forecast) in
-                print("!!!!!!!!!!!!!!")
                 print(forecast.icon)
                 self?.dateTextField.stringValue = forecast.dateString
             }).disposed(by: self.disposeBag)

@@ -10,6 +10,7 @@ target 'Tenki' do
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
   pod 'SwiftyJSON'
+  pod 'SwiftyBeaver'
 
   target 'TenkiTests' do
     inherit! :search_paths
